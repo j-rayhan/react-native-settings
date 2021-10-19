@@ -116,18 +116,18 @@ public class RNSettingsModule extends ReactContextBaseJavaModule {
     mOpenSettingToRequestCode.put(Settings.ACTION_LOCATION_SOURCE_SETTINGS, 0);
     mOpenSettingToRequestCode.put(Settings.ACTION_AIRPLANE_MODE_SETTINGS, 1);
     mOpenSettingToRequestCode.put(Settings.ACTION_CAPTIONING_SETTINGS, 2);
-    mOpenSettingToRequestCode.put(Settings.ACTION_DEVELOPMENT_MODE_SETTINGS, 3);
+    mOpenSettingToRequestCode.put(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS, 3);
 
     mRequestCodeToOpenSetting.put(0, Settings.ACTION_LOCATION_SOURCE_SETTINGS);
     mRequestCodeToOpenSetting.put(1, Settings.ACTION_AIRPLANE_MODE_SETTINGS);
     mRequestCodeToOpenSetting.put(2, Settings.ACTION_CAPTIONING_SETTINGS);
-    mRequestCodeToOpenSetting.put(3, Settings.ACTION_DEVELOPMENT_MODE_SETTINGS);
+    mRequestCodeToOpenSetting.put(3, Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
   }
 
   private void initSettingsActions() {
     mOpenSettingToSettingsName.put(Settings.ACTION_LOCATION_SOURCE_SETTINGS, Constants.LOCATION_SETTING);
     mOpenSettingToSettingsName.put(Settings.ACTION_AIRPLANE_MODE_SETTINGS, Constants.AIRPLANE_MODE_SETTING);
-    mOpenSettingToSettingsName.put(Settings.ACTION_DEVELOPMENT_MODE_SETTINGS, Constants.DEVELOPMENT_MODE_SETTING);
+    mOpenSettingToSettingsName.put(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS, Constants.DEVELOPMENT_MODE_SETTING);
     mOpenSettingToSettingsName.put(Settings.ACTION_CAPTIONING_SETTINGS, Constants.CAPTIONING_SETTINGS);
   }
 
@@ -169,7 +169,7 @@ public class RNSettingsModule extends ReactContextBaseJavaModule {
     //open settings
     constants.put(ACTION_LOCATION_SOURCE_SETTINGS, Settings.ACTION_LOCATION_SOURCE_SETTINGS);
     constants.put(ACTION_AIRPLANE_MODE_SETTINGS, Settings.ACTION_AIRPLANE_MODE_SETTINGS);
-    constants.put(ACTION_DEVELOPMENT_MODE_SETTINGS, Settings.ACTION_DEVELOPMENT_MODE_SETTINGS);
+    constants.put(ACTION_DEVELOPMENT_MODE_SETTINGS, Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);
     constants.put(ACTION_CAPTIONING_SETTINGS, Settings.ACTION_CAPTIONING_SETTINGS);
     return constants;
   }
