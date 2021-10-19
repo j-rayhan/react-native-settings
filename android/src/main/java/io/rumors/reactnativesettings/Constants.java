@@ -9,6 +9,7 @@ public class Constants {
   //Settings Names
   public static final String LOCATION_SETTING = "LOCATION_SETTING";
   public static final String AIRPLANE_MODE_SETTING = "AIRPLANE_MODE_SETTING";
+  public static final String DEVELOPMENT_MODE_SETTING = "DEVELOPMENT_MODE_SETTING";
   public static final String CAPTIONING_SETTINGS = "CAPTIONING_SETTINGS";
 
   //Settings Values
